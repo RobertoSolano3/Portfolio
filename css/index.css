@@ -146,7 +146,7 @@ main {
 .title-content{
     display: block;
     opacity: 0;
-    animation: revealText .5s forwards;
+    animation: revealText .8s forwards;
 }
 
 .title-second{
@@ -184,6 +184,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--medblue);
+    min-width: 320px;
 }
 
 .fa-brands {
