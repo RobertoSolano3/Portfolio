@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2c3b43aa66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar header">
+            <a href="index.html" class="home"><i class="fa-solid fa-house"></i></a>
+            <input type="checkbox" id="dropdown">
+            <label for="dropdown"><i class="fa-solid fa-grip-lines"></i></label>
+            <section class="menu-container">
+                <ul>
+                    <li><a href="" class="menu-item">About</a></li>
+                    <li><a href="" class="menu-item">Skills</a></li>
+                    <li><a href="" class="menu-item">Portfolio</a></li>
+                    <li><a href="" class="menu-item">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="principal-contact">
+            <h2 class="title-contact">Contact me</h2>
+            <div class="form-container">
+                <form class="form" id="contacto" action="https://formspree.io/f/mknyveqp" method="post">
+                    <input class="form__input" name="nombre" type="text" placeholder="Name">
+                    <input class="form__input" name="email" type="email" placeholder="Email">
+                    <input class="form__input" id="asunto" name="asunto" type="text" placeholder="Subject">
+                    <input class="form__input message" name="mensaje" type="text" placeholder="Message" >
+                    
+                    <button class="form__button">Enviar</button>
+                    
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <!-- Por defecto, el ultimo boton del formulario se utiliza para enviarlo -->
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <ul class="footer-icons-container">
+            <li><a href="" class="social-net"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
