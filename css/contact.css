@@ -69,8 +69,31 @@ body {
 }
 
 .menu-container .menu-item {
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    position: relative;
     color: var(--skyblue);
     font-size: 1.2rem;
+}
+
+.menu-container .menu-item::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.menu-container .menu-item:hover::after {
+    transform: scaleX(1);
+    color: white;
 }
 
 .menu-container .menu-item:hover {
@@ -131,28 +154,19 @@ body {
     align-self: center;
     border-radius: 10px;
     font-size: 1.8rem;
-
-}
-
-.contact-button {
-    padding: 10px;
-    text-decoration: none;
     background-color: var(--darkblue);
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    color: var(--skyblue);
-    border: solid 1px var(--skyblue);
-    font-weight: 500;
-    width: 150px;
-    margin: 0 auto;
+    color: white;
+    border: solid 1px var(--darkblue);
     
 }
 
-.contact-button:hover{
-    background-color: var(--skyblue);
+
+
+.form__button:hover{
+    background-color: white;
     color: var(--darkblue);
     border: solid 1px var(--darkblue);
+    
 }
 
 footer {
