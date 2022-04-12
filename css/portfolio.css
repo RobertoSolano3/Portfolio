@@ -30,7 +30,6 @@ html {
     align-items: center;
     justify-content: space-between;
     padding-block: 15px;
-    /* background-color: rgba(255, 255, 255, 0.836); */
     background-color: var(--darkblue);
     flex-direction: row;
     
@@ -143,8 +142,6 @@ main {
 
 .portfolio-item:hover {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-    /* background-color: #a8d1d3; */
-    /* color: white; */
 }
 
 .portfolio-item:hover .fa-brands {
@@ -325,9 +322,6 @@ footer li:hover {
     main {
         height: 1550px;
     }
-
-
-
 
     .portfolio-container {
         display: grid;

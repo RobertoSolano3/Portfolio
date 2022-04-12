@@ -30,7 +30,6 @@ html {
     align-items: center;
     justify-content: space-between;
     padding-block: 15px;
-    
     background-color: var(--darkblue);
     flex-direction: row;
     
@@ -110,16 +109,9 @@ html {
 
 main {
     height: 899px;
-    /* background-color: rgb(242, 250, 250); */
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     min-width: 320px;
 
-    /* background-image: url('/img/home-back3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 899px;
-    min-width: 320px; */
 }
 
 .principal-skills {
