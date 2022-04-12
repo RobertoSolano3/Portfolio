@@ -18,15 +18,6 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-main {
-    background-image: url('/img/home-back2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 899px;
-    min-width: 320px;  
-}
-
 .fa-solid {
     color: white;
     font-size: 1.5rem;
@@ -45,7 +36,6 @@ main {
     align-items: center;
     justify-content: space-between;
     padding-block: 15px;
-    /* background-color: rgba(255, 255, 255, 0.836); */
     background-color: var(--darkblue);
     flex-direction: row;
     
@@ -70,10 +60,14 @@ main {
     font-size: 3rem;
 }
 
+.menu-container {
+    margin-right: 30px;
+}
+
 .menu-container ul {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
 
 .menu-container .menu-item {
@@ -117,75 +111,61 @@ main {
     transform: scale(1.2);
 }
 
-/*Empieza parte principal del index.html*/
-
-.principal {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 100px;
-
-    
-    height: 822px;
-    min-width: 320px;
+main{
+    height: 899px;
+    background: linear-gradient(to right, #d8e7f1, #c4d5e0);
 }
 
-.title{
-    width: 500px;
+.principal-about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 800px;
+    padding: 50px;
+}
+
+.title {
     display: flex;
     flex-direction: column;
+    gap: 60px;
+    padding: 10px;
     justify-content: center;
-    align-items: center;
-    color: black;
-    text-transform: uppercase;
-    line-height: 40px;
-    font-weight: 500;
+    align-items: flex-start;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, 0.877);
-    border-radius: 20px;
-    padding: 35px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    
-}
-
-.title-content{
-    display: block;
+    font-weight: 500;
     opacity: 0;
-    animation: revealText 1s forwards;
+    animation: revealText 2s forwards;
 }
 
 .title-second{
-    animation-delay: .175s;
+    animation-delay: 2s;
 }
 .title-third{
-    animation-delay: .25s;
+    animation-delay: 3s;
 }
 
-.contact-button {
-    padding: 15px;
-    text-decoration: none;
-    background-color: var(--skyblue);
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.8rem;
-    color: var(--darkblue);
-    border: solid 1px var(--darkblue);
-    font-weight: 500;
-    width: 200px;
+.principal-about h2 {
+    font-size: 5rem;
+    margin-bottom: 100px;
+    color: black;
+}
+
+
+.photo-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-about img{
+    
+    border-radius: 50%;
+    width: 300px;
+    height: 310px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     margin: 0 auto;
     
 }
 
-.contact-button:hover{
-    background-color: var(--darkblue);
-    color: var(--skyblue);
-    border: solid 1px var(--skyblue);
-}
-
-/*Termina parte de index */
 
 footer {
     height: 70px;
@@ -237,7 +217,7 @@ footer li:hover {
 
 @keyframes revealText {
     0%{
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     100%{
         opacity: 1; 
@@ -248,20 +228,37 @@ footer li:hover {
 @media screen and (max-width: 600px){
 
     main {
-        background-image: url('/img/home-back3.png');
-        height: 899px;
+        height: 1150px;
+    }
+
+    .title {
+        font-size: 1.9rem;
+        gap: 40px;
+    }
+
+    .principal-about h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .principal-about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-about img {
+        height: 200px;
+        width: 200px;
     }
 
     .fa-solid{
         font-size: 1.8rem;
     }
 
-    .title {
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 2.8rem;
+    .menu-container .menu-item {
+       
+        font-size: 1.8rem;
     }
 
     .menu-container{
@@ -282,5 +279,32 @@ footer li:hover {
    
     #dropdown:checked ~ .menu-container{
         max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+
+    .title {
+        font-size: 2.5rem;
+        
+    }
+
+    .principal-about h2 {
+        font-size: 3.5rem;
+    }
+
+    .principal-about div h2{
+        margin-bottom: 50px;
+    }
+
+    .principal-about {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .photo-about img {
+        height: 200px;
+        width: 200px;
     }
 }
